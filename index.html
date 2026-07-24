@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary meta -->
+  <title>flagr — Aşkın yeni usulü</title>
+  <meta name="description" content="flagr, güvendiğin insanların onayıyla eşleştiren yeni nesil bir tanışma deneyimi. Swipe yok, tesadüf yok — sadece gerçek onay. Bekleme listesi açık." />
+  <meta name="theme-color" content="#FFF3F1" />
+  <link rel="canonical" href="https://flagr.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="flagr — Aşkın yeni usulü" />
+  <meta property="og:description" content="Güvendiğin insanların onayıyla eşleşen yeni nesil tanışma deneyimi. Bekleme listesine katıl." />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:url" content="https://flagr.app/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="flagr — Aşkın yeni usulü" />
+  <meta name="twitter:description" content="Güvendiğin insanların onayıyla eşleşen yeni nesil tanışma deneyimi." />
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- ============================ NAV ============================ -->
+  <nav class="nav">
+    <a class="brand" href="#hero" aria-label="flagr ana sayfa">
+      <svg class="brand__mark" width="20" height="21" viewBox="0 0 31.24 32.97" aria-hidden="true">
+        <polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon>
+        <polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon>
+      </svg>
+      <span class="brand__name">flagr</span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link nav__link--desktop" href="#nasil-calisir">Nasıl Çalışır</a>
+      <a class="nav__link" href="#ozellikler">Özellikler</a>
+      <a class="nav__link" href="#sss">SSS</a>
+      <a class="nav__cta" href="#waitlist">Bekleme Listesi</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================ HERO ============================ -->
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <div class="badge">ÇOK YAKINDA · BEKLEME LİSTESİ AÇIK</div>
+        <h1 class="hero__title">Aşkın<br /><span class="accent">yeni usulü.</span></h1>
+        <p class="hero__lead">flagr, güvendiğin insanların onayıyla eşleştiren yepyeni nesil bir tanışma deneyimi. Swipe yok, tesadüf yok — sadece gerçek onay.</p>
+
+        <form id="waitlist" class="waitlist" data-waitlist novalidate>
+          <label class="sr-only" for="waitlist-email">E-posta adresin</label>
+          <input class="waitlist__input" id="waitlist-email" type="email" name="email" required placeholder="E-posta adresin" autocomplete="email" />
+          <!-- honeypot: botlar doldurur, gerçek kullanıcı görmez -->
+          <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn btn--dark" type="submit">Bekleme Listesine Katıl</button>
+        </form>
+        <p class="waitlist__success" data-waitlist-success hidden>Seni listeye ekledik. Lansmanı ilk senin haberin olacak.</p>
+        <p class="waitlist__error" data-waitlist-error hidden>Bir şeyler ters gitti. Lütfen birazdan tekrar dener misin?</p>
+        <p class="waitlist__note">Kart bilgisi istemiyoruz. Sadece haber vermek için yazıyoruz.</p>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__blob"></div>
+        <svg class="hero__flag hero__flag--big" viewBox="0 0 31.24 32.97">
+          <polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon>
+          <polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon>
+        </svg>
+        <svg class="hero__flag hero__flag--small" viewBox="0 0 31.24 32.97">
+          <polygon points="0,0 31.24,0 0,20.82" fill="#9B4D68" opacity="0.85"></polygon>
+          <polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFC09F"></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================ MARQUEE ============================ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <!-- words duplicated for a seamless -50% loop -->
+        <span class="marquee__item">GÜVEN <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item">ONAY <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item">GÖRÜCÜ <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item">KULİS <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item">EŞLEŞME <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item">MÜJDE <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item" aria-hidden="true">GÜVEN <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item" aria-hidden="true">ONAY <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item" aria-hidden="true">GÖRÜCÜ <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item" aria-hidden="true">KULİS <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item" aria-hidden="true">EŞLEŞME <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+        <span class="marquee__item" aria-hidden="true">MÜJDE <svg viewBox="0 0 31.24 32.97"><polygon points="0,0 31.24,0 0,20.82" fill="#352B35"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FFF3F1"></polygon></svg></span>
+      </div>
+    </div>
+
+    <!-- ============================ NASIL ÇALIŞIR ============================ -->
+    <section id="nasil-calisir" class="section">
+      <div class="badge">SÜREÇ</div>
+      <h2 class="section__title">Rastgele değil, onaylı.</h2>
+      <div class="steps">
+        <article class="step">
+          <span class="step__num">01</span>
+          <h3 class="step__title">Görücünü Davet Et</h3>
+          <p class="step__desc">Güvendiğin bir yakınını görücün olarak davet edersin. Karar tesadüfe değil, tanıdığın birinin gözüne kalır.</p>
+        </article>
+        <article class="step">
+          <span class="step__num">02</span>
+          <h3 class="step__title">Kulis'te Değerlendirilir</h3>
+          <p class="step__desc">Görücüler, potansiyel eşleşmeleri anonim Kulis odasında objektif kriterlerle değerlendirir.</p>
+        </article>
+        <article class="step">
+          <span class="step__num">03</span>
+          <h3 class="step__title">Onaylanır, Sohbet Başlar</h3>
+          <p class="step__desc">İki tarafın görücüleri de onay verirse eşleşme gerçekleşir ve doğrudan tanışma başlar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ ÖZELLİKLER ============================ -->
+    <section id="ozellikler" class="section section--dark">
+      <div class="badge badge--onDark">NELER VAR</div>
+      <h2 class="section__title section__title--light">Neden flagr farklı?</h2>
+      <div class="features">
+        <article class="feature">
+          <svg class="feature__mark" width="18" height="19" viewBox="0 0 31.24 32.97" aria-hidden="true"><polygon points="0,0 31.24,0 0,20.82" fill="#FFC09F"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon></svg>
+          <h3 class="feature__title">Kulis</h3>
+          <p class="feature__desc">Anonim değerlendirme odası. İsim yok, önyargı yok — sadece uyum konuşur.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature__mark" width="18" height="19" viewBox="0 0 31.24 32.97" aria-hidden="true"><polygon points="0,0 31.24,0 0,20.82" fill="#FFC09F"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon></svg>
+          <h3 class="feature__title">Görücü Merkezi</h3>
+          <p class="feature__desc">Çevrenin gücünü dijitale taşı. Güvendiğin herkes senin adına görücülük yapabilir.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature__mark" width="18" height="19" viewBox="0 0 31.24 32.97" aria-hidden="true"><polygon points="0,0 31.24,0 0,20.82" fill="#FFC09F"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon></svg>
+          <h3 class="feature__title">Uyum Testleri</h3>
+          <p class="feature__desc">Değerler, yaşam tarzı ve aile anlayışına göre çok boyutlu uyum puanlaması.</p>
+        </article>
+        <article class="feature">
+          <svg class="feature__mark" width="18" height="19" viewBox="0 0 31.24 32.97" aria-hidden="true"><polygon points="0,0 31.24,0 0,20.82" fill="#FFC09F"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon></svg>
+          <h3 class="feature__title">Müjdeler</h3>
+          <p class="feature__desc">Karşılıklı onaydan sonra eşleşmen doğrudan sohbet ekranına taşınır.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ FARK / KARŞILAŞTIRMA ============================ -->
+    <section class="section">
+      <div class="badge">FARK</div>
+      <h2 class="section__title">Klasik değil, güvenli.</h2>
+      <div class="compare">
+        <div class="compare__col">
+          <h3 class="compare__head compare__head--old">Klasik Uygulamalar</h3>
+          <div class="compare__row"><span class="compare__mark compare__mark--old">×</span><p class="compare__text compare__text--old">Sağa kaydır, umduğunu bul</p></div>
+          <div class="compare__row"><span class="compare__mark compare__mark--old">×</span><p class="compare__text compare__text--old">Yabancıyla sıfırdan güven inşa et</p></div>
+          <div class="compare__row"><span class="compare__mark compare__mark--old">×</span><p class="compare__text compare__text--old">Yüzeysel profil, ilk fotoğraf kararı</p></div>
+          <div class="compare__row"><span class="compare__mark compare__mark--old">×</span><p class="compare__text compare__text--old">Herkes profilini görür</p></div>
+        </div>
+        <div class="compare__col">
+          <h3 class="compare__head compare__head--new">flagr</h3>
+          <div class="compare__row"><span class="compare__mark compare__mark--new">✓</span><p class="compare__text compare__text--new">Güvendiğin biri senin adına değerlendirir</p></div>
+          <div class="compare__row"><span class="compare__mark compare__mark--new">✓</span><p class="compare__text compare__text--new">Onaylı eşleşmeyle güvenle başla</p></div>
+          <div class="compare__row"><span class="compare__mark compare__mark--new">✓</span><p class="compare__text compare__text--new">Değerler ve yaşam tarzına göre çok boyutlu uyum</p></div>
+          <div class="compare__row"><span class="compare__mark compare__mark--new">✓</span><p class="compare__text compare__text--new">Kulis'te kimlik anonim kalır</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SSS ============================ -->
+    <section id="sss" class="section section--faq">
+      <div class="badge">MERAK EDİLENLER</div>
+      <h2 class="section__title">Sıkça Sorulan Sorular</h2>
+      <div class="faq" data-faq>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="true">
+            <span>flagr nedir?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a"><p>flagr, görücü usulü tanışma geleneğini dijitalleştiren yeni nesil bir eşleşme deneyimidir. Adaylar yerine güvendikleri kişiler değerlendirme yapar.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span>Görücü kim olabilir?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a"><p>Güvendiğin herhangi bir arkadaşın, ailenin ya da yakının davet linkiyle görücün olabilir.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span>Kulis nasıl çalışır?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a"><p>Kulis, görücülerin potansiyel eşleşmeleri anonim biçimde değerlendirip oy verdiği odadır. İki taraf da onaylarsa eşleşme gerçekleşir.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span>Verilerim güvende mi?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a"><p>Kulis içindeki tüm bilgiler anonimleştirilir; kimlik bilgisi yalnızca karşılıklı onaydan sonra paylaşılır.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false">
+            <span>Uygulamayı ne zaman kullanabilirim?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a"><p>flagr şu anda bekleme listesi aşamasında. Listeye katıl, lansmanı ilk öğrenenlerden ol.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SON CTA ============================ -->
+    <section class="cta">
+      <h2 class="cta__title">Sıradaki nesil,<br /><span class="accent">senin neslin.</span></h2>
+      <p class="cta__lead">flagr lansmana hazırlanıyor. İlk kullananlardan olmak için listeye katıl.</p>
+      <form class="waitlist waitlist--center" data-waitlist novalidate>
+        <label class="sr-only" for="cta-email">E-posta adresin</label>
+        <input class="waitlist__input waitlist__input--light" id="cta-email" type="email" name="email" required placeholder="E-posta adresin" autocomplete="email" />
+        <!-- honeypot: botlar doldurur, gerçek kullanıcı görmez -->
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn--coral" type="submit">Bekleme Listesine Katıl</button>
+      </form>
+      <p class="waitlist__success waitlist__success--onDark" data-waitlist-success hidden>Seni listeye ekledik. Lansmanı ilk senin haberin olacak.</p>
+      <p class="waitlist__error waitlist__error--onDark" data-waitlist-error hidden>Bir şeyler ters gitti. Lütfen birazdan tekrar dener misin?</p>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="brand">
+          <svg class="brand__mark" width="20" height="21" viewBox="0 0 31.24 32.97" aria-hidden="true"><polygon points="0,0 31.24,0 0,20.82" fill="#FFF3F1"></polygon><polygon points="2.61,23.43 31.24,5.21 19.96,32.97" fill="#FF7A7A"></polygon></svg>
+          <span class="brand__name brand__name--light">flagr</span>
+        </div>
+        <p class="footer__desc">Güvenilir görücü onayıyla eşleşen, yeni nesil bir tanışma deneyimi.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4 class="footer__heading">Ürün</h4>
+          <a class="footer__link" href="#nasil-calisir">Nasıl Çalışır</a>
+          <a class="footer__link" href="#ozellikler">Özellikler</a>
+          <a class="footer__link" href="#sss">SSS</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Takip Et</h4>
+          <div class="footer__social">
+            <a class="footer__social-link" href="https://www.instagram.com/flagrapp/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+            <a class="footer__social-link" href="https://x.com/flagrtr" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">X</a>
+            <a class="footer__social-link" href="https://www.facebook.com/profile.php?id=61592181640658" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> flagr. Tüm hakları saklıdır.</span>
+      <span>Bu site tanıtım amaçlıdır.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

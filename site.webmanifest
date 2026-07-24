@@ -1,0 +1,13 @@
+{
+  "name": "flagr",
+  "short_name": "flagr",
+  "description": "Güvendiğin insanların onayıyla eşleşen yeni nesil tanışma deneyimi.",
+  "lang": "tr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF3F1",
+  "theme_color": "#FFF3F1",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" }
+  ]
+}
