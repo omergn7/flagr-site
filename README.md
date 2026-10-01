@@ -7,6 +7,8 @@ Bağımlılığı olmayan, tamamen **statik** bir landing page. Framework yok, b
 ```
 flagr-site/
 ├── index.html            # Sayfanın tamamı (içerik markup içinde → SEO dostu)
+├── gizlilik.html         # Gizlilik Politikası / KVKK (Play Console'a /gizlilik girilir)
+├── hesap-silme.html      # Hesap silme talimatı (Play Console "hesap silme URL'si")
 ├── favicon.svg           # Marka ikonu
 ├── site.webmanifest      # PWA/meta bilgisi
 ├── robots.txt            # Arama motoru izinleri
