@@ -71,6 +71,7 @@
           <tr><td>Uygulama içi etkileşim</td><td>Görücü/referans ilişkileri ve davetler, kulis oyları, eşleşme önerileri ve kararları, “ship” (beğen/geç) hareketleri, perde açma talepleri</td><td>Siz / diğer kullanıcılar</td></tr>
           <tr><td>Mesajlar</td><td>Sohbetlerde gönderdiğiniz mesajlar ve okundu bilgisi</td><td>Siz</td></tr>
           <tr><td>Güvenlik</td><td>Engellediğiniz kullanıcılar, yaptığınız ve hakkınızda yapılan şikayetler</td><td>Siz / diğer kullanıcılar</td></tr>
+          <tr><td>Satın alma</td><td>Satın aldığınız ürün/abonelik, tutar, platform, tarih ve mağazanın verdiği satın alma doğrulama bilgisi. <strong>Kart ve ödeme bilgileriniz bize ulaşmaz</strong>; ödemeyi Google Play veya App Store işler.</td><td>Siz / mağaza</td></tr>
           <tr><td>Bildirim</td><td>Push bildirim token’ı, bildirim tercihleri, uygulama içi bildirimler</td><td>Cihazınız / siz</td></tr>
           <tr><td>Teknik</td><td>Oturum bilgileri, giriş zamanları, IP adresi (kimlik doğrulama sunucusu kayıtları)</td><td>Otomatik</td></tr>
           <tr><td>Site – bekleme listesi</td><td>E-posta adresi; ayrıca kayıt anındaki IP adresi, ülke ve tarayıcı bilgisi (spam önleme için)</td><td>Siz / otomatik</td></tr>
@@ -88,6 +89,7 @@
       <li>Profilinizi oluşturmak, uyum puanı hesaplamak ve eşleşme önermek</li>
       <li>Görücü/referans, kulis, ship ve perde süreçlerini yürütmek</li>
       <li>Kullanıcılar arası mesajlaşmayı sağlamak</li>
+      <li>Uygulama içi satın alımları ve premium üyeliği doğrulamak ve tanımlamak</li>
       <li>Size uygulama içi ve push bildirimleri göndermek</li>
       <li>Sahte hesap, taciz ve kötüye kullanımı önlemek; şikayetleri incelemek</li>
       <li>Şifre sıfırlama gibi işlemsel e-postalar göndermek</li>
@@ -116,6 +118,7 @@
         <tbody>
           <tr><td>Supabase</td><td>Veritabanı, kimlik doğrulama, fotoğraf depolama, işlemsel e-postalar</td></tr>
           <tr><td>Expo (650 Industries), Google Firebase Cloud Messaging, Apple Push Notification Service</td><td>Push bildirimlerinin cihazınıza iletilmesi</td></tr>
+          <tr><td>Google Play, Apple App Store</td><td>Uygulama içi satın alımların ve ödemelerin işlenmesi (kendi gizlilik politikalarına tabidir)</td></tr>
           <tr><td>Cloudflare</td><td>Web sitesinin barındırılması ve güvenliği</td></tr>
           <tr><td>Google (Google E-Tablolar, Google Fonts)</td><td>Bekleme listesi kayıtlarının saklanması; sitedeki yazı tiplerinin yüklenmesi</td></tr>
         </tbody>
@@ -131,7 +134,8 @@
       <p><strong>Uygulama içinden:</strong> Ayarlar → Hesap Ayarları → <strong>Hesabımı Sil</strong>. İki adımlı onaydan sonra hesabınız ve aşağıdaki tüm verileriniz <strong>kalıcı olarak ve hemen</strong> silinir.</p>
       <p><strong>Uygulamaya erişiminiz yoksa:</strong> kayıtlı e-posta adresinizden <a href="mailto:atanioapp@gmail.com?subject=Hesap%20silme%20talebi">atanioapp@gmail.com</a> adresine “Hesap silme talebi” konulu bir e-posta gönderin. Talebinizi en geç 30 gün içinde yerine getiririz. Ayrıntılar: <a href="hesap-silme.html">Hesap Silme</a> sayfası.</p>
     </div>
-    <p>Silinen veriler: hesap ve giriş bilgileri, profil bilgileri, profil fotoğrafları, kayıt ve test cevapları, uyum puanları, görücü/referans ilişkileri ve davetler, eşleşmeler, kulis üyelikleri ve oyları, sohbetler ve mesajlar, ship hareketleri, bildirimler, push token’ları, engelleme ve şikayet kayıtları.</p>
+    <p>Silinen veriler: hesap ve giriş bilgileri, profil bilgileri, profil fotoğrafları, kayıt ve test cevapları, uyum puanları, görücü/referans ilişkileri ve davetler, eşleşmeler, kulis üyelikleri ve oyları, sohbetler ve mesajlar, ship hareketleri, satın alma ve premium kayıtları, bildirimler, push token’ları, engelleme ve şikayet kayıtları.</p>
+    <p><strong>Not:</strong> Hesabınızı silmek, Google Play veya App Store üzerinden başlattığınız bir aboneliği otomatik olarak iptal etmez. Ücretlendirilmeye devam etmemek için aboneliğinizi mağaza ayarlarından iptal edin.</p>
 
     <h2 id="guvenlik">10. Güvenlik</h2>
     <p>Veriler cihazınız ile sunucularımız arasında şifreli (HTTPS/TLS) olarak iletilir. Şifreler hash’lenerek saklanır. Veritabanında satır düzeyinde erişim kuralları (RLS) uygulanır; her kullanıcı yalnızca görmeye yetkili olduğu verilere erişebilir. Buna rağmen hiçbir sistem %100 güvenli değildir; olası bir veri ihlalinde mevzuatın öngördüğü bildirimleri yaparız.</p>
